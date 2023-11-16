@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -16,40 +17,102 @@
         <div class="logo">
             
         </div>
-        <div class="pesquisa">
-            <p>PESQUISE NO SITE</p>
-            <div style="width: 250px; height: 50px; background: white; border-radius: 60px; border: 4px #002653 solid"></div>
-        </div>
         <div class="voluntario">
             <a href="">Seja voluntario</a>
         </div>
         <nav>
-        
-        <div class="dropdown">
-            <button class="dropbtn">Sobre a escola</button>
-            <div class="dropdown-content">
-            <a href="nossa_historia.html">Nossa História</a>
-            <a href="infraestrutura.html">Infraestrutura</a>
-            <a href="equipe_semeador.html">Equipe Semeador</a>
-        </div>
+            <!-- Botão sobre a escola -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre a escola
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="sobre/nossa_historia.html">Nossa História</a></li>
+                  <li><a class="dropdown-item" href="sobre/infraestrutura.html">Infraestrutura</a></li>
+                  <li><a class="dropdown-item" href="sobre/equipe_semeador.html">Equipe Semeador</a></li>
+                  <li><a class="dropdown-item" href="sobre/niveis_ensino.html">Níveis de Ensino</a></li>
+                  <li><a class="dropdown-item" href="sobre/matricula.html">Matrícula</a></li>
+                </ul>
+                 <!-- Botão festividade -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Eventos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="fesitvidades/eventos.html">Festividades</a></li>
+                  <li><a class="dropdown-item" href="fesitvidades/calendario.html">Calendário</a></li>
+                </ul>
+            </div>
+              <!-- Botão parceiros -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Parceiros
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="parceiros/parceiros.html">Parceiros</a></li>
+                  <li><a class="dropdown-item" href="parceiros/ser_paceiro.html">Seja um parceiro</a></li>
+              </div>
+               <!-- Botão doações-->
+               <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Doações
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="doações/doacoes.html">Nota fiscal paulista</a></li>
+                  <li><a class="dropdown-item" href="doações/outras_formas.html">Outras formas de doar</a></li>
+                </ul>
+                 <!-- Botão fale conosco -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fale Conosco
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="fale conosco/visita.html">Agende sua visita</a></li>
+                  <li><a class="dropdown-item" href="fale conosco/contato.html">Contato</a></li>
+                </ul>
+
         </nav>
     </header>
     <div class="carrossel">
-        <div class="slide" id="um">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="slide-1">
+                <img src="imgs/Rectangle 7.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente, sem fins lucrativos que atende crianças e adolescentes com deficiência intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade. Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do Espectro Autista). 
 
-            
-            <p class="texto-slide-um">Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente, sem fins lucrativos que atende crianças e adolescentes com deficiência intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade. Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do Espectro Autista). 
-
-            Nosso trabalho se baseia nas diversas formas de linguagem, usando educação, arte, tecnologia, cultura e o lúdico como estratégias para prover o aprendizado, desenvolvimento e formação dos alunos.</p>
-        </div>
-
+                    Nosso trabalho se baseia nas diversas formas de linguagem, usando educação, arte, tecnologia, cultura e o lúdico como estratégias para prover o aprendizado, desenvolvimento e formação dos alunos.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" id="slide-2">
+                <img src="imgs/Rectangle 7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" id="slide-3">
+                <img src="imgs/Rectangle 7.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
     <footer>
         <div class="rodape">
             <p>Grupo educacional O Semeador | Todos os direitos reservados Política de Privacidade</p>
-            <img class="icon-instagram" src="imgs/🦆 icon _instagram_.png" alt="">
-            <img class="icon-facebook" src="imgs/🦆 icon _facebook_.png" alt="">
+            <a href="https://www.instagram.com/metodistaosemeador/"><img class="icon-instagram" src="imgs/🦆 icon _instagram_.png" alt=""></a>
+            <a href="https://www.facebook.com/escolaosemeador/"><img class="icon-facebook" src="imgs/🦆 icon _facebook_.png" alt=""></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
