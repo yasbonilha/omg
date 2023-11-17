@@ -27,6 +27,7 @@
 .dropdown{
   display: flex;
   align-items: center;
+  justify-content:space-evenly;
 }
 .rodape{
     background-color: rgba(0, 77, 142, 1);
